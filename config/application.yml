@@ -1,0 +1,12 @@
+
+server:
+  port: 80
+  max-http-header-size: 8096
+  
+line:
+  bot: 
+    handler:
+      path: /webhook
+    channelId: 1654406574
+    channelSecret: d5c26c657d08eedf72fda44cf6f2d59e
+    channelToken: a5HtlEaZ4Ly6keVAF8VgVixTBnwYyttsriKPFPCLCh1+DVKw7EPbepOkfDfdtY6CBfD2MS5zsMh5KZOjq2YrA8vSrYxnYtEPNTiZeZEz/ywo7cvcwLkhfooIl3duOJ2r1ThQ/whE5esHBP96Z3GvXAdB04t89/1O/w1cDnyilFU=
