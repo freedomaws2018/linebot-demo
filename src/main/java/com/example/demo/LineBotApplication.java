@@ -33,6 +33,12 @@ public class LineBotApplication {
         return TextMessage.builder().text("Ok, I have given you the rich menu.").build();
       }
       
+      if("移除選單".equals(text)) {
+        LineMessagingClient client = LineMessagingClient.builder(channelAccessToken).build();
+        client.linkRichMenuIdToUser(userId, richMenuId);
+        return TextMessage.builder().text("Ok, I delete the rich menu, now.").build();
+      }
+      
       return TextMessage.builder().text(event.getMessage().getText()).build();
   }
   
