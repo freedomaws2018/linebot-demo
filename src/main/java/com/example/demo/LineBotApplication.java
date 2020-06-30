@@ -35,7 +35,7 @@ public class LineBotApplication {
       
       if("移除選單".equals(text)) {
         LineMessagingClient client = LineMessagingClient.builder(channelAccessToken).build();
-        client.linkRichMenuIdToUser(userId, richMenuId);
+        client.unlinkRichMenuIdFromUser(userId);
         return TextMessage.builder().text("Ok, I delete the rich menu, now.").build();
       }
       
